@@ -1,46 +1,39 @@
 [package]
-name = "idea"
+name = "arc162"
 version = "0.1.0"
-edition = "2021"
+edition = "2018"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[[bin]]
-name = "a"
-path = "src/a.rs"
-
-[[bin]]
-name = "b"
-path = "src/b.rs"
+[package.metadata.cargo-compete.bin]
+arc162-a = { alias = "a", problem = "https://atcoder.jp/contests/arc162/tasks/arc162_a" }
+arc162-b = { alias = "b", problem = "https://atcoder.jp/contests/arc162/tasks/arc162_b" }
+arc162-c = { alias = "c", problem = "https://atcoder.jp/contests/arc162/tasks/arc162_c" }
+arc162-d = { alias = "d", problem = "https://atcoder.jp/contests/arc162/tasks/arc162_d" }
+arc162-e = { alias = "e", problem = "https://atcoder.jp/contests/arc162/tasks/arc162_e" }
+arc162-f = { alias = "f", problem = "https://atcoder.jp/contests/arc162/tasks/arc162_f" }
 
 [[bin]]
-name = "lazy_static"
-path = "src/lazy_static.rs"
+name = "arc162-a"
+path = "src/bin/a.rs"
 
 [[bin]]
-name = "c"
-path = "src/c.rs"
+name = "arc162-b"
+path = "src/bin/b.rs"
 
 [[bin]]
-name = "d"
-path = "src/d.rs"
+name = "arc162-c"
+path = "src/bin/c.rs"
 
 [[bin]]
-name = "e"
-path = "src/e.rs"
+name = "arc162-d"
+path = "src/bin/d.rs"
 
 [[bin]]
-name = "f"
-path = "src/f.rs"
+name = "arc162-e"
+path = "src/bin/e.rs"
 
 [[bin]]
-name = "arc162-v1"
-path = "src/arc162-v1.rs"
-
-[[bin]]
-name = "arc162-v2"
-path = "src/arc162-v2.rs"
-
+name = "arc162-f"
+path = "src/bin/f.rs"
 
 [dependencies]
 num = "=0.2.1"
@@ -82,3 +75,5 @@ text_io = "=0.1.8"
 whiteread = "=0.5.0"
 rustc-hash = "=1.1.0"
 smallvec = "=1.2.0"
+
+[dev-dependencies]
