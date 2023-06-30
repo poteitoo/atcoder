@@ -6,7 +6,7 @@
   "postCreateCommand": "/bin/sh .devcontainer/postCreateCommand.sh",
   "customizations": {
     "vscode": {
-      "extensions": ["esbenp.prettier-vscode", "mhutchie.git-graph"]
+      "extensions": [  "mhutchie.git-graph"]
     }
   }
 
