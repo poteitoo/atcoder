@@ -1,3 +1,8 @@
+use proconio::input;
+
 fn main() {
-    todo!();
+    input! {
+        n: usize
+    }
+    println!("{:0>10b}", n);
 }
