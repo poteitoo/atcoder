@@ -1,3 +1,15 @@
+use proconio::{input, marker::Chars};
+
 fn main() {
-    todo!();
+    input! {
+        n: usize,
+        r: Chars,
+        c: Chars
+    }
+
+    let mut cands = vec!['A', 'B', 'C'];
+    for _ in 0..n - 3 {
+        cands.push('.');
+    }
+    println!("{:?}", cands);
 }
