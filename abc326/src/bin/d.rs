@@ -1,10 +1,12 @@
-use proconio::{input, marker::Chars};
+// use proconio::{input, marker::Chars};
+
+use proconio::input;
 
 fn main() {
     input! {
         n: usize,
-        r: Chars,
-        c: Chars
+        // r: Chars,
+        // c: Chars
     }
 
     let mut cands = vec!['A', 'B', 'C'];
