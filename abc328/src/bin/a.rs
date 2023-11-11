@@ -1,3 +1,12 @@
+use proconio::input;
+
 fn main() {
-    todo!();
+    input! {
+        n: usize,
+        x: usize,
+        s: [usize; n],
+    }
+
+    let ans: usize = s.iter().filter(|v| **v <= x).sum();
+    println!("{}", ans);
 }
