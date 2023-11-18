@@ -1,3 +1,12 @@
+use proconio::{input, marker::Chars};
+
 fn main() {
-    todo!();
+    input! {
+        s: Chars
+    }
+
+    print!("{}", s[0]);
+    for i in 1..s.len() {
+        print!(" {}", s[i]);
+    }
 }
