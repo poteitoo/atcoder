@@ -1,3 +1,8 @@
+use proconio::input;
+
 fn main() {
-    todo!();
+    input! {
+        bg: (usize, usize)
+    }
+    println!("{}", if bg.0 > bg.1 { "Bat" } else { "Glove" })
 }
